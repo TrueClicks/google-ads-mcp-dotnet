@@ -22,7 +22,7 @@ env:
   # Configuring Dotnet Build Commands
   PUBLISH_OUTPUT_FOLDER: Publish
   PUBLISH_SELF_CONTAINED: true
-  PUBLISH_SINGLE_FILE: false
+  PUBLISH_SINGLE_FILE: true
   PUBLISH_READY_TO_RUN: false
   PUBLISH_AOT: false
   PUBLISH_TRIMMED: false
