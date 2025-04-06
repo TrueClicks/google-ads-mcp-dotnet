@@ -1,30 +1,47 @@
+
 # Google Ads MCP (.NET) — by TrueClicks
 
-> **Note:** This is an *unofficial* integration. It connects GPTs to the Google Ads API using [GAQL.app](https://gaql.app) as a backend.
+
+ This is an *unofficial* Google Ads MCP integration — and as of now, **no official version exists**. It supports both Windows and macOS and it connects GPTs to the Google Ads API using [GAQL.app](https://gaql.app) as a backend.
+
+
 
 ---
 
 ## What Is This?
 
-Google Ads MCP by TrueClicks enables GPTs (like Claude) to securely access and query your Google Ads account data via [GAQL.app](https://gaql.app), a friendly interface for the Google Ads Query Language (GAQL).
+Google Ads MCP by TrueClicks enables your GPT (like Claude) to securely access and query your Google Ads account data via [GAQL.app](https://gaql.app), a friendly interface for the Google Ads Query Language (GAQL).
 
 ---
 
 ## Setup Guide
 
-### 1. Get Your GPT Token
+### 1. Download the Executable
+
+Download the latest version of the **GoogleAdsMCP executable** from the **Releases** section of this repository:
+
+- For **Windows**: Choose between `x86` or `x64`
+- For **macOS**: Use the `arm64` version
+
+Place the binary in a convenient location on your system (e.g., `C:/App/GoogleAdsMCP/`).
+
+### 2. Get Your GPT Token
 
 1. Go to [https://gaql.app](https://gaql.app)
 2. Log in using your Google account to authorize Google Ads access.
 3. Click the **Copy GPT Token** button in the top-right corner.
 
-### 2. Configure Your GPT (Claude)
+### 3. Configure Your GPT (Claude)
 
 1. Open **Claude**
 2. Press `CTRL + ,` to open settings.
 3. In the left sidebar, click **Developer**
 4. Click **Edit config**
-5. Paste the following JSON (replace the path to **GoogleAdsMCP.exe** and the **token value**):
+5. Paste the following JSON into your configuration file:
+
+   > **Important:** Replace:
+   > - `YOUR_GPT_TOKEN_HERE` with the token copied from GAQL.app  
+   > - The executable path (`C:/App/GoogleAdsMCP/GoogleAdsMCP.exe`) with the actual location of the MCP executable on your machine
 
    ```json
    {
@@ -33,8 +50,8 @@ Google Ads MCP by TrueClicks enables GPTs (like Claude) to securely access and q
          "command": "cmd",
          "args": [
            "/c",
-           "C:/REPLACE_PATH_TO_/GoogleAdsMCP.exe",
-           "--token=REPLACE_YOUR_GPT_TOKEN_HERE"
+           "C:/App/GoogleAdsMCP/GoogleAdsMCP.exe",
+           "--token=YOUR_GPT_TOKEN_HERE"
          ]
        }
      }
