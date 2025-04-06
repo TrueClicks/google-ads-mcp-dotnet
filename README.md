@@ -6,7 +6,7 @@
 
 ## What Is This?
 
-Google Ads MCP by TrueClicks enables your custom GPT (like Claude) to securely access and query your Google Ads account data via [GAQL.app](https://gaql.app), a friendly interface for the Google Ads Query Language (GAQL).
+Google Ads MCP by TrueClicks enables GPTs (like Claude) to securely access and query your Google Ads account data via [GAQL.app](https://gaql.app), a friendly interface for the Google Ads Query Language (GAQL).
 
 ---
 
