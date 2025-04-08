@@ -1,16 +1,9 @@
 
 # Google Ads MCP (.NET) — by TrueClicks
 
+Google Ads MCP by TrueClicks enables your GPT (like Claude) to securely access and query your Google Ads account data via [GAQL.app](https://gaql.app).
 
 This is an *unofficial* Google Ads MCP integration — and as of now, **no official version exists**. It supports both Windows and macOS and it connects GPTs to the Google Ads API using [GAQL.app](https://gaql.app) as a backend.
-
-
-
----
-
-## 📦 What Is This?
-
-Google Ads MCP by TrueClicks enables your GPT (like Claude) to securely access and query your Google Ads account data via [GAQL.app](https://gaql.app), a friendly interface for the Google Ads Query Language (GAQL).
 
 ---
 
@@ -43,7 +36,7 @@ Download the latest version of the **GoogleAdsMCP executable** from the **Releas
    - For **Windows** download the `-win-` version
    - For **macOS** download the `-osx-` version
 
-Place the binary in a convenient location on your system (e.g., `C:/App/GoogleAdsMCP/`).
+Place the binary in a convenient location on your system (e.g., `C:/GoogleAdsMCP/`).
 
 ### 2. Get Your GPT Token
 
@@ -65,10 +58,8 @@ The application is configured via a JSON file named ```claude_desktop_config.jso
    {
      "mcpServers": {
        "gads": {
-         "command": "cmd",
+         "command": "C:/GoogleAdsMCP/GoogleAdsMCP.exe",
          "args": [
-           "/c",
-           "C:/App/GoogleAdsMCP/GoogleAdsMCP.exe",
            "--token=YOUR_GPT_TOKEN_HERE"
          ]
        }
@@ -78,7 +69,7 @@ The application is configured via a JSON file named ```claude_desktop_config.jso
 
    > **📌 Important:** Replace:
    > 1. `YOUR_GPT_TOKEN_HERE` with the token copied from GAQL.app  
-   > 2. `C:/App/GoogleAdsMCP/GoogleAdsMCP.exe` path with the actual location of the downloaded MCP executable on your machine. File path in this JSON must use **forward slashes (`/`)**, even on Windows systems.
+   > 2. `C:/GoogleAdsMCP/GoogleAdsMCP.exe` path with the actual location of the downloaded MCP executable on your machine. The file path in this JSON must use **forward slashes (`/`)**, even on Windows systems.
 
 6. Exit Claude completely: **Hamburger menu > File > Exit**
 7. Restart Claude
