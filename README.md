@@ -5,6 +5,8 @@ Google Ads MCP by TrueClicks enables your GPT (like Claude) to securely access a
 
 This is an *unofficial* Google Ads MCP integration — and as of now, **no official version exists**. It supports both Windows and macOS and it connects GPTs to the Google Ads API using [GAQL.app](https://gaql.app) as a backend.
 
+> **Note:** If you're using a Mac, please scroll to the end of this document for specific installation instructions.
+
 ---
 
 ## ✅ Why Use This MCP?
@@ -109,5 +111,22 @@ You’re now ready to use GPT to query your Google Ads accounts.
 
 ---
 
+### 🖥️ Running on macOS
+
+This works on macOS x64, but **probably not** on ARM (Apple Silicon) yet — we still need to figure that out.
+
+1. Go to the folder where you downloaded and extracted the `GoogleAdsMCP` file.
+2. Make it executable:
+```bash
+chmod +x ./GoogleAdsMCP
+```
+3. Run the application (it will fail initially):
+```bash
+./GoogleAdsMCP
+```
+4. Go to **System Settings > Privacy & Security** and under **Security**, allow downloaded application `GoogleAdsMCP` by clicking **Open Anyway**.
+5. Once the application is allowed, follow the steps to configure the `claude_desktop_config.json` settings file and any other required configuration as described in the main setup section of the README.
+
+---
 
 For issues or questions, please contact ales@trueclicks.com.
