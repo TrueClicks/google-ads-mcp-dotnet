@@ -1,7 +1,10 @@
+**This project has been archived. Please use the official Google Ads MCP instead: [https://github.com/google-marketing-solutions/google_ads_mcp](https://github.com/google-marketing-solutions/google_ads_mcp)**
+
+---
 
 # Google Ads MCP (.NET) - by TrueClicks
 
-Google Ads MCP by TrueClicks enables your AI (like Claude) to securely access and query your Google Ads account data. It supports both Windows and macOS (Intel only). It connects AIs to Google Ads using [GAQL.app] as a backend
+Google Ads MCP by TrueClicks enables your AI (like Claude) to securely access and query your Google Ads account data. It supports both Windows and macOS (Intel only). It connects AIs to Google Ads using [GAQL.app] as a backend.
 
 This is an *unofficial* Google Ads MCP integration — and as of now, **no official version exists**.
 
