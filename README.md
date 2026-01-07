@@ -1,6 +1,6 @@
 *This project is archived now that Google has released an official MCP for Google Ads. Please use one of these alternatives:*
 
-- **Self-hosted:** [Google's official MCP](https://github.com/googleads/google-ads-mcp)** - requires technical setup
+- **Self-hosted:** [Google's official MCP](https://github.com/googleads/google-ads-mcp) - requires technical setup
 - **Easiest:** [Google Ads hosted MCP by TrueClicks](https://help.trueclicks.com/en/articles/11583411-claude-ai-how-to-use-google-ads-with-claude) - ready to go in minutes
 
 ---
