@@ -1,4 +1,4 @@
-**This project has been archived. Please use the official Google Ads MCP instead: [https://github.com/google-marketing-solutions/google_ads_mcp](https://github.com/google-marketing-solutions/google_ads_mcp)**
+**This project has been archived. Please use the official Google Ads MCP instead: [https://github.com/googleads/google-ads-mcp](https://github.com/googleads/google-ads-mcp)**
 
 ---
 
